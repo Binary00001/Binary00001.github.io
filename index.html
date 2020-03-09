@@ -1,8 +1,41 @@
 <!DOCTYPE html>
+<style>
+    div{
+        color: white;
+        padding-left: 10px;
+        padding-top: 3px;
+        background-color: black;
+        height: 25px;
+        width: 100px;
+        position: relative;
+        animation: bottomBar 5s infinite;
+
+    }
+
+    @keyframes bottomBar{
+        from {width: 0px;}
+        to {width: 370px;}
+
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+        left: 40%;
+        right: 40%;
+
+    }
+
+</style>
+
 <html>
     <title>Andrew Riggs</title>
 <body>
 <h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<p>This is where I will be testing elements I'm working on.</p>
+<div>
+ loading...
+</div>
+<footer>I'm hosted with GitHub Pages.</footer>
 </body>
 </html>
