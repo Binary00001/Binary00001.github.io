@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <style>
-    div{
+    .load{
         color: white;
         padding-left: 10px;
         padding-top: 3px;
@@ -11,7 +11,6 @@
         animation: bottomBar 5s infinite;
 
     }
-
     @keyframes bottomBar{
         from {width: 0px;}
         to {width: 370px;}
@@ -24,18 +23,32 @@
         right: 40%;
 
     }
-
-</style>
+    .icons{
+        width: 30px;
+        height: 30px;
+    }
+    
+   </style>
 
 <html>
     <title>Andrew Riggs</title>
 <body>
 <h1>Hello World</h1>
 
-<p>This is where I will be testing elements I'm working on.</p>
-<div>
- loading...
-</div>
+<p>This is where I will be testing elements I'm working on. </br> You can follow my journey via my social media pages. </p>
+
+<nav> 
+    <a href="https://twitter.com/MistahBinary" title="Twitter"><img class="icons" src="twitter.png" alt="Twitter"></a>
+    <a href="https://github.com/Binary00001" title="GitHub"><img class="icons" src="github.png" alt="GitHub"></a>
+</nav>
+
+<div class="load">
+    loading...
+   </div>
+
+<p><a class="twitter-timeline" width="400" height="550" href="https://twitter.com/MistahBinary?ref_src=twsrc%5Etfw">Tweets by MistahBinary</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+
 <footer>I'm hosted with GitHub Pages.</footer>
 </body>
 </html>
