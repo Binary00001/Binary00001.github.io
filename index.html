@@ -1,56 +1,83 @@
 <!DOCTYPE html>
-<style>
-    .load{
-        color: white;
-        padding-left: 10px;
-        padding-top: 3px;
-        background-color: black;
-        height: 25px;
-        width: 100px;
-        position: relative;
-        animation: bottomBar 5s infinite;
-    }
-    @keyframes bottomBar{
-        from {width: 0px;}
-        to {width: 370px;}
+<html lang="en">
+<head>
+  <title>Binary00001</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/photos/generated.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/ba2bdccee0.js"></script>
 
-    }
-    .feed{
-        overflow: hidden;
-    }
-    footer{
-        position: fixed;
-        bottom: 0;
-        left: 40%;
-        right: 40%;
+  <style>
+      *{
+          margin:0;
+          padding:0;
+      }
 
-    }
-    .icons{
-        width: 30px;
-        height: 30px;
-    }
-    
-   </style>
-
-<html>
-    <title>Andrew Riggs</title>
+      
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
 
-<p>This is where I will be testing elements I'm working on. </br> You can follow my journey via my social media pages. </p>
-
-<nav> 
-    <a href="https://twitter.com/MistahBinary" title="Twitter"><img class="icons" src="twitter.png" alt="Twitter"></a>
-    <a href="https://github.com/Binary00001" title="GitHub"><img class="icons" src="github.png" alt="GitHub"></a>
+    <!--navbar-->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand text-danger" href="#">ANDREW RIGGS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">about</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">links</a>
+      </li>    
+    </ul>
+  </div>  
 </nav>
 
-<div class="load">
-    loading...
-   </div>
+<!--about-->
+<div class="jumbotron text-center about" style="margin: 0px; padding-top:4rem">
+    <p class="display-4" id="home">BINARY00001</p>
+    <p class="display-5">01000111<br>01100101<br>01100101<br>01101011</p>
+</div>
 
-<div class="feed"><a class="twitter-timeline" width="400" height="550" href="https://twitter.com/MistahBinary?ref_src=twsrc%5Etfw">Tweets by MistahBinary</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+<!--projects-->
+<div class="conatiner-fluid">
+      <p class="display-4 bg-dark text-danger text-center" style="margin: 0px; padding: 2rem" id="projects">projects</p>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 text-center">Placeholder
+            <img src="https://pixy.org/images/placeholder.png" class="img-thumbnail">
+        </div>
+        <div class="col-sm-4 text-center">Placeholder
+            <img src="https://pixy.org/images/placeholder.png" class="img-thumbnail">
+        </div>
+        <div class="col-sm-4 text-center">Placeholder
+            <img src="https://pixy.org/images/placeholder.png" class="img-thumbnail">
+        </div>
+    </div>    
+</div>
 
-
-<footer>I'm hosted with GitHub Pages.</footer>
-</body>
-</html>
+<!--links-->
+<div class="conatiner-fluid border-top text-center " style="margin-bottom: 1rem">
+    <div>
+        <p class="display-5" id="links">links</p>
+    </div>
+    <div>
+        <a href="https://www.twitter.com/mistahBinary">
+            <i class="fa fa-twitter text-dark px-2" style="font-size: 2rem"></i>
+        </a>
+        <a href="https://www.github.com/Binary00001">
+            <i class="fab fa-github text-dark px-2" style="font-size: 2rem"></i>
+        </a>
+    </div>
+</div>
